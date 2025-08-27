@@ -1,0 +1,28 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenprojecttr;
+import java.util.Scanner;
+/**
+ *
+ * @author CETECOM
+ */
+public class Biblioteca {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Libro libro = new Libro("Harry Potter","J.K Rowling","1998" );
+        String titulo = libro.getTitulo();
+        System.out.println("El titulo ingreaso es: " + titulo);
+        
+        System.out.println("Ingrese el codigo del libro: ");
+        String codigo = sc.nextLine();
+        
+        
+        libro.setCodigo(codigo);
+        //String codigo = libro.getCodigo();
+        System.out.println("El codigo ingresado es: " + libro.getCodigo());
+    }
+}
+
